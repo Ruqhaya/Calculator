@@ -1,0 +1,107 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    background-image: linear-gradient(45deg, rgba(6, 6, 6), rgb(49,77,109));
+}
+
+.main {
+    padding: 2%;
+    border: 1px solid black;
+    width: 30vw;
+    border-radius: 20px;
+    background-color: transparent;
+    box-shadow: 5px 5px 5px 8px rgb(28, 24, 40);
+}
+
+.inputBox {
+    display: block;
+    padding: 5%;
+}
+.base{
+    padding-left: 2%;
+    margin: 2%;
+}
+
+.inputBox input {
+    width: 100%;
+    padding: 3%;
+    border: none;
+    text-align: right;
+    font-size: 38px;
+    background-color: transparent;
+    font-weight: 500;
+    cursor: pointer;
+    color: white;
+}
+.inputBox input::placeholder{
+    color: white;
+}
+.common{
+    padding: 1%;
+    margin: 1%;
+}
+.button1{
+    width: 20%;
+    /* height: 25%; */
+    padding-block: 10%;
+    border-radius: 50%;
+    margin: 2%;
+    color: white;
+    background-color: transparent;
+    box-shadow: 10px 10px 5px  black ;
+    font-size: 20px;
+    font-weight: 600;
+} 
+.button{
+    margin: 2%;
+    width: 20%;
+    /* height: 25%; */
+    padding-block: 5%;
+    border-radius: 50%;
+    margin: 2%;
+    color: white;
+    background-color: transparent;
+    box-shadow: 10px 10px 5px  black ;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+@media (max-width:1288px) {
+    .main{
+        width: 50vw;
+        /* height: 60vh; */
+    }
+    
+}
+@media (max-width:720px) {
+    .main{
+        width: 83vw;
+    }
+}
+@media (max-width:420px){
+    .common{
+        padding: 3.1%;
+        margin: .1%;
+    }
+    .main {
+        width: 83vw;
+        height: 76vh;
+    }
+    .base{
+        padding: 0%;
+        margin: 0%;
+    }
+    .button {
+        margin: 3% 1.9%;
+        font-size: 21px;
+    }
+}
